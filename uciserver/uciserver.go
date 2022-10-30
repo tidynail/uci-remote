@@ -23,7 +23,7 @@ func main() {
 
 	if len(os.Args) < 3 {
 		fmt.Printf("%s [ip]:port /path/to/engine\n", exefname)
-		fmt.Printf("  ex. %s :7979 stockfish\n", exefname)
+		fmt.Printf("  ex. %s :7900 stockfish\n", exefname)
 		os.Exit(1)
 	}
 
@@ -32,7 +32,7 @@ func main() {
 	check(err)
 
 	log.Printf("Listening on %s\n", addr)
-	log.Printf("Using engine %s\n", engine)
+	log.Printf(" for engine %s\n", engine)
 	l, err := net.Listen("tcp", addr)
 	check(err)
 	for {

@@ -48,11 +48,11 @@ func main() {
 	if len(os.Args) < 2 {
     if !read_cfg(exebase + ".txt", &addr) {
 			fmt.Printf("%s <ip:port>\n", exefname)
-			fmt.Printf("  ex. %s 127.0.0.1:7979\n", exefname)
+			fmt.Printf("  ex. %s 127.0.0.1:7900\n", exefname)
 			fmt.Printf("\nto save the argument,\n")
 			fmt.Printf("  make %s.txt containing <ip:port>\n", exefname)
 			fmt.Printf("    ex. %s.txt\n", exefname)
-			fmt.Printf("        127.0.0.1:7979\n")
+			fmt.Printf("        127.0.0.1:7900\n")
 			fmt.Printf("\nwhen needing multiple proxies,\n")
 			fmt.Printf("  rename executable and use <rename>.txt\n")
 			os.Exit(1)
