@@ -40,9 +40,6 @@ func handle(conn net.Conn, id int, engine string) {
 	}()
 
 	go io.Copy(conn, stdout)
-	//if err := p.Wait(); err != nil {
-	//	log.Printf("Engine was killed due to: %s\n", err.Error())
-	//}
 }
 
 func main() {
